@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>J's Auto Detailing</title>
+	<meta name="description" content="Scarica gratis il nostro Template HTML/CSS GARAGE. Se avete bisogno di un design per il vostro sito web GARAGE può fare per voi. Web Domus Italia">
+	<meta name="author" content="Web Domus Italia">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style/slider.css">
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+</head>
+<body>
+	<!-- Navbar Up -->
+	<nav class="topnavbar navbar-default topnav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
+					<span class="sr-only"> Toggle navigaion</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand logo" href="#">
+					<img src="image/logo1.png" alt="logo">
+				</a>
+
+			</div>	 
+		</div>
+		<div class="collapse navbar-collapse" id="upmenu">
+			<ul class="nav navbar-nav" id="navbarontop">
+				<li class="active"><a href="#">About</a> </li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume">
+						<li><a href="#">Paint Correction</a></li>
+						<li><a href="#">Ceramic Coating</a></li>
+						<li><a href="#">Steam Cleaning & Shampooing</a></li>
+						<li><a href="#">Exterior & Interior Detailing</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+						<ul class="dropdown-menu dropdowncostume">
+							<li><a href="#">Luxury & Sports</a></li>
+							<li><a href="#">Daily</a></li>
+							<li><a href="3">Comercial</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="contact.html">Lets Chat!</a>
+ 
+				</li>
+				<!--<button><span class="postnewcar">POST NEW CAR</span></button>-->
+			</ul>
+		</div>
+	</nav>
+</div>
+<!--_______________________________________ Carousel__________________________________ -->
+<!--<div class="allcontain">    Video Section
+    <video id="carousel-video" class="carousel-video" autoplay loop muted>
+        <source src="image/1212.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>-->
+
+<!-- Video Section -->
+<div class="allcontain">
+    <video id="carousel-video" class="carousel-video" autoplay loop muted>
+        <source src="image/1212.mp4" type="video/mp4" id="video-source">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    // Function to switch video source based on screen width
+    function setVideoSource() {
+        const video = document.getElementById('carousel-video');
+        const videoSource = document.getElementById('video-source');
+
+        // Check if the screen width is less than 768px (common breakpoint for mobile devices)
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            videoSource.src = "image/mobile.mp4"; // Vertical video for mobile
+        } else {
+            videoSource.src = "image/1212.mp4"; // Horizontal video for desktop
+        }
+        video.load(); // Reload the video with the new source
+    }
+
+    // Run the function on page load
+    document.addEventListener("DOMContentLoaded", setVideoSource);
+
+    // Optionally, run the function on window resize
+    window.addEventListener("resize", setVideoSource);
+</script>
+
+
+<!-- ________________________LATEST CARS SECTION _______________________-->
+<div class="latestcars">
+	<h1 class="text-center">&bullet; FEATURED   PROJECTS&bullet;</h1>
+</div>
+<br>
+<br>
+<!-- ________________________Latest Cars Image Thumbnail________________-->
+	<div class="grid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="image/car1.webp" alt="car1">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Bentley Continental</h3>
+								<p>A stunning white Bentley Continental,<br>
+									the epitome of luxury, elegance, and performance, <br>
+									offering unparalleled comfort and breathtaking design.</p>
+								<a href="https://www.instagram.com/p/C1SjM8FSfY9/" target="_blank" class="instagram-icon">
+									<img src="image/instagram-logo.webp" alt="Instagram" class="instagram-logo">
+								</a>
+
+	 							<div class="wishtxt">
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+				<div class="txthover">
+					<img src="image/car2.webp" alt="car2">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Renault</h3>
+								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
+	 							sed do eiusmod tempor incididunt" </p>
+	 							<h4 class="price">900 &euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="image/car3.webp" alt="car3">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Ford Mustang</h3>
+								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
+	 							sed do eiusmod tempor incididunt" </p>
+	 							<h4 class="price">3000 &euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="image/car4.jpg" alt="car4">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Rover</h3>
+								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
+	 							sed do eiusmod tempor incididunt" </p>
+	 							<h4 class="price">1000 &euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="image/car5.jpg" alt="car5">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Porche</h3>
+								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
+	 							sed do eiusmod tempor incididunt" </p>
+	 							<h4 class="price">1200 &euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="image/car6.jpg" alt="car6">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Porche 911</h3>
+								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
+	 							sed do eiusmod tempor incididunt" </p>
+	 							<h4 class="price">4000 &euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="image/car7.webp" alt="car7">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Chevrolet SS</h3>
+								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
+	 							sed do eiusmod tempor incididunt" </p>
+	 							<h4 class="price">3000 &euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="txthover">
+					<img src="image/car8.webp" alt="car8">
+						<div class="txtcontent">
+							<div class="stars">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+							<div class="simpletxt">
+								<h3 class="name">Meclaren</h3>
+								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
+	 							sed do eiusmod tempor incididunt" </p>
+	 							<h4 class="price">2500 &euro;</h4>
+	 							<button>READ MORE</button><br>
+	 							<div class="wishtxt">
+		 							<p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+		 							<p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
+		 						</div>
+							</div>
+							<div class="stars2">
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+								<div class="glyphicon glyphicon-star"></div>
+							</div>
+						</div>
+				</div>	 
+			</div>	
+		</div>
+	</div>
+	<br><br>
+<!-- _______________________________News Letter ____________________-->
+	<div class="newslettercontent">
+		<div class="leftside">
+			<img src="image/border.png" alt="border">
+			<h1>OUR SERVICES</h1>
+			<p>• 💎 Paint Correction 💎<br>
+				• 💎 Ceramic Coating 💎<br>
+				• 💎 Interior Steam Cleaning 💎<br>
+				• 💎 Shampooing 💎<br>
+				• 💎 Exterior Detailing 💎<br>
+				• 💎 Interior Detailing 💎<br>
+				• 💎 Full Auto Detailing 💎</p>
+		</div>
+		<div class="rightside">
+			<img class="newsimage" src="image/newsletter.jpg" alt="newsletter">
+			<input type="text" class="form-control" id="subemail" placeholder="EMAIL">
+			<button>Book Now!</button>
+		</div>
+	</div>
+	<!-- ______________________________________________________Bottom Menu ______________________________-->
+	<div class="bottommenu">
+		<div class="bottomlogo">
+		<span class="dotlogo">&bullet;</span><img src="image/logo1.png" alt="logo1"><span class="dotlogo">&bullet;;</span>
+		</div>
+		<ul class="nav nav-tabs bottomlinks">
+			<li role="presentation" ><a href="#/" role="button">ABOUT US</a></li>
+			<li role="presentation"><a href="#/">CATEGORIES</a></li>
+			<li role="presentation"><a href="#/">PREORDERS</a></li>
+			<li role="presentation"><a href="#/">CONTACT US</a></li>
+			<li role="presentation"><a href="#/">RECEIVE OUR NEWSLETTER</a></li>
+		</ul>
+		 <img src="image/line.png" alt="line"> <br>
+		 <div class="bottomsocial">
+		 	<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-youtube-play"></i></a>
+			<a href="#"><i class="fa fa-pinterest"></i></a>
+		</div>
+			<div class="footer">
+				<div class="copyright">
+				  &copy; Copy right 2024 | <a href="#">Privacy </a>| <a href="#">Policy</a>
+				</div>
+				<div class="atisda">
+					 Designed by <a href="http://www.sadn.uk/">SADN.UK</a>
+				</div>
+			</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
+<script type="text/javascript" src="source/js/isotope.js"></script>
+<script type="text/javascript" src="source/js/myscript.js"></script> 
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
+<script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+</body>
+</html>
